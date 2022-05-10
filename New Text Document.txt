@@ -3,3 +3,18 @@ composer create-project laravel/laravel:^8.0 example-app
 cd example-app
  
 php artisan serve
+
+{composer require laravel/ui
+ php artisan ui:auth
+
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+php artisan migrate
+}
+
+{make controller
+
+php artisan make:controller API/AuthController
+}
+react
+npm i bootstrap
